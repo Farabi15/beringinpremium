@@ -1,0 +1,1476 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4231903150571503"
+     crossorigin="anonymous"></script>
+    <meta name="google-adsense-account" content="ca-pub-4231903150571503">
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Y9QT68Y0BD"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Y9QT68Y0BD');
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Informasi Seputar Beringin Premium Menu Makanan dan Minumam Terbaik Se kota Batam">
+    <meta name="keywords" content="Beringin Premium, Recipe Menu, Cefe Di Batam, Tempat Nongkrong di Batam">
+    <meta name="author" content="Beringin Premium">
+    <title>
+
+
+     [Recipes Menu]</title>
+    <link rel="icon" href="https://logo.clearbit.com/anchorcafeandroastery.com" type="image/x-icon">
+    <style>
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #008a8a;
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header .logo a {
+    font-size: 2rem;
+    color: #008a8a;
+    text-decoration: none;
+    font-weight: bold;
+    margin-bottom: 30px; /* Increased margin to add space between logo and menu */
+    animation: logoColorChange 4s infinite; /* Animation to change logo color */
+}
+
+@keyframes logoColorChange {
+    0% {
+        color: #008a8a;
+    }
+    25% {
+        color: #d9e7e7;
+    }
+    50% {
+        color: #008a8a;
+    }
+    75% {
+        color: #d9e7e7;
+    }
+    100% {
+        color: #008a8a;
+    }
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Center menu items */
+    margin-top: 0;
+    padding: 0;
+}
+
+header ul li {
+    margin-left: 25px;
+    cursor: pointer;
+}
+
+header ul li:first-child {
+    margin-left: 0; /* Remove left margin from the first item */
+}
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+header ul li a:hover {
+    color: #008a8a;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: url('https://c0.wallpaperflare.com/preview/692/321/207/coffee-shop-coffee-interior-interior-design.jpg') center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #008a8a;
+    position: relative;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85); /* Semi-transparent dark overlay */
+}
+
+.hero-content {
+    z-index: 1;
+    padding: 20px;
+    color: #d9e7e7;
+    max-width: 80%;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.hero p {
+    font-size: 1.4rem;
+    margin-bottom: 30px;
+    opacity: 0.8;
+}
+
+.cta-btn {
+    background-color: #008a8a;
+    color: #d9e7e7;
+    padding: 20px 35px;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #D4600D;
+    transform: scale(1.05);
+}
+
+/* Modal Styling */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    overflow: auto; /* Menambahkan scroll pada modal jika konten lebih panjang */
+}
+
+/* Konten Modal */
+.modal-content {
+    background-color: white;
+    margin: auto;
+    padding: 20px;
+    width: 70%;
+    max-width: 600px;
+    max-height: 80vh; /* Menentukan batas tinggi modal */
+    overflow-y: auto; /* Scroll vertikal jika konten melebihi batas */
+    border-radius: 10px;
+}
+
+/* Tombol Close */
+.close {
+    color: #FF6200;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.close:hover,
+.close:focus {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #000000;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+footer ul li {
+    display: inline;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+footer ul li a:hover {
+    color: #FF6200;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    .cta-btn {
+        padding: 10px 30px;
+        font-size: 1.1rem;
+    }
+
+    header .logo a {
+        font-size: 1.7rem;
+    }
+
+    header ul {
+        flex-direction: column;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    header ul li {
+        margin-left: 0;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .cta-btn {
+        padding: 10px 25px;
+        font-size: 1rem;
+    }
+
+    header .logo a {
+        font-size: 1.5rem;
+    }
+
+    header ul {
+        flex-direction: column;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    header ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+
+    .cta-btn {
+        padding: 8px 20px;
+        font-size: 0.9rem;
+    }
+
+    header .logo a {
+        font-size: 1.3rem;
+    }
+
+    header ul {
+        flex-direction: column;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    header ul li {
+        margin-left: 0;
+        margin-bottom: 8px;
+    }
+}
+
+
+/* Job Listings Section (Grid 3 Kolom Horizontal) */
+.job-listings {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Membuat 3 kolom dalam satu baris */
+    gap: 20px; /* Memberikan jarak antar elemen */
+    padding: 40px 20px;
+    background-color: #fff;
+}
+
+.job-item {
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+/* Pastikan gambar dalam setiap job item memiliki lebar yang tepat */
+.job-item img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.job-item h3 {
+    margin: 15px 0;
+    font-size: 1.5rem;
+}
+
+.job-item p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.job-item .apply-btn {
+    background-color: #FF740F;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border: none;
+}
+
+.job-item .apply-btn:hover {
+    background-color: #D4600D;
+    transform: scale(1.05);
+}
+
+/* Modal for Apply Now */
+#applyModal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    overflow: auto;
+}
+
+.modal-content {
+    background-color: white;
+    margin: auto;
+    padding: 20px;
+    width: 70%;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+.modal-content h2 {
+    font-size: 1.75rem;
+    margin-bottom: 15px;
+}
+
+.modal-content #modalTitle {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.modal-content #modalDescription {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+/* Close Button */
+.close {
+    color: #FF6200;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.close:hover,
+.close:focus {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .job-listings {
+        grid-template-columns: repeat(2, 1fr); /* 2 kolom pada layar lebih kecil */
+    }
+}
+
+@media (max-width: 768px) {
+    .job-listings {
+        grid-template-columns: 1fr; /* 1 kolom pada layar lebih kecil */
+    }
+}
+
+/* FAQ CSS */
+  .faq-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .faq-item {
+    background-color: #f9f9f9;
+    border-left: 5px solid #FF6200;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .faq-item h3 {
+    font-size: 1.2rem;
+    color: #333;
+    padding: 20px;
+  }
+
+  .faq-item p {
+    font-size: 1rem;
+    color: #333;
+  }
+
+  .faq-item a {
+    color: #FF6200;
+    text-decoration: none;
+  }
+
+  .faq-item a:hover {
+    text-decoration: underline;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 20px;
+  }
+
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav>
+        <div class="logo">
+            <a href="https://c0.wallpaperflare.com/preview/692/321/207/coffee-shop-coffee-interior-interior-design.jpg" target="_blank" style="font-size: 1.8rem; color: white; text-decoration: none; font-weight: bold;">Beringin Premium</a>
+        </div>
+            <ul>
+                <li><a href="#" id="aboutBtn">About Us</a></li>
+                <li><a href="#" id="servicesBtn">Our Menu</a></li>
+                <li><a href="#" id="contactBtn">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Beringin Premium</h1>
+            <p>Menyajikan Cita Rasa Kopi Berkualitas, Menghadirkan Kehangatan dan Cerita di Setiap Cangkir.</p>
+            <a href="#" id="applyBtn" class="cta-btn"><strong>SPECIAL MENU</strong></a>
+        </div>
+    </section>
+
+<!-- Job Listings Section (Grid 3 Kolom) -->
+<section class="job-listings">
+    <div class="job-item">
+        <img src="https://taysbakers.com/wp-content/uploads/2015/07/americano.jpg" alt="Americano">
+        <h3>Americano</h3>
+        <p><strong>Americano</strong> pilihan sempurna bagi penikmat kopi yang menginginkan rasa murni dan sederhana.</p>
+        <br />
+        <a href="#" id="applyBtn1" class="cta-btn">DETAILS</a>
+    </div>
+    <div class="job-item">
+        <img src="https://luden.id/wp-content/uploads/2024/03/cappuccino-dan-cafe-latte.jpg" alt="Caffe Latte">
+        <h3>Caffe Latte</h3>
+        <p>minuman yang pas untuk memulai hari dengan suasana santai.</p>
+        <a href="#" id="applyBtn2" class="cta-btn">DETAILS</a>
+    </div>
+    <div class="job-item">
+        <img src="https://asset.kompas.com/crops/n-hmPUQlJsW8sK8ppfyHAJqb49U=/0x0:5397x3598/1200x800/data/photo/2022/01/03/61d313971017f.jpg" alt="Manual Brew">
+        <h3>Manual Brew</h3>
+        <p>menawarkan pengalaman menyeduh kopi yang personal dan memuaskan.</p>
+        <a href="#" id="applyBtn3" class="cta-btn">DETAILS</a>
+    </div>
+    <div class="job-item">
+        <img src="https://cdn0-production-images-kly.akamaized.net/rF9J7T6wYPBakuzlp-ym1JveG6w=/0x342:5989x3718/1200x675/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/3930827/original/066100900_1644554867-shutterstock_1984582070.jpg" alt="Mie Goreng">
+        <h3>Mie Goreng</h3>
+        <p>adalah hidangan klasik yang mudah disiapkan dan selalu menggugah selera.
+</p>
+        <a href="#" id="applyBtn4" class="cta-btn">DETAILS</a>
+    </div>
+    <div class="job-item">
+        <img src="https://cdn0-production-images-kly.akamaized.net/HusexjAqNowHofU5e1lb0jXNBEk=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/1359428/original/084420000_1475132767-Black-pepper-petai-fried-rice.jpg" alt="Nasi Goreng">
+        <h3>Nasi Goreng</h3>
+        <p>adalah hidangan favorit yang mudah dibuat dan cocok dinikmati kapan saja.
+</p>
+        <a href="#" id="applyBtn5" class="cta-btn">DETAILS</a>
+    </div>
+    <div class="job-item">
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/034/904/621/small/savory-french-fries-cuisine-freshly-prepared-to-perfection-generative-ai-photo.jpg" alt="French Fries">
+        <h3>French Fries</h3>
+        <p>adalah camilan lezat dan renyah yang cocok dinikmati kapan saja.</p>
+        <a href="#" id="applyBtn6" class="cta-btn">DETAILS</a>
+    </div>
+    <!-- Add more job items as needed -->
+</section>
+
+
+<section>
+  <h2>Orang lain juga bertanya</h2>
+
+  <div itemscope itemtype="https://schema.org/FAQPage">
+    <div class="faq-container">
+      
+      <!-- FAQ Item 1 -->
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+  <h3 itemprop="name">Apa yang membuat Cafe Beringin Premium berbeda dari kafe lainnya?</h3>
+  <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+    <p itemprop="text">Cafe Beringin Premium menawarkan suasana mewah dan nyaman dengan menu eksklusif berbahan premium serta pelayanan terbaik untuk pengalaman bersantap yang istimewa.</p>
+  </div>
+</div>
+
+<!-- FAQ Item 2 -->
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+  <h3 itemprop="name">Apa saja menu andalan di Cafe Beringin Premium?</h3>
+  <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+    <p itemprop="text">Beberapa menu andalan kami meliputi Signature Wagyu Steak, Truffle Pasta, Beringin Special Coffee, dan berbagai pilihan dessert artisan.</p>
+  </div>
+</div>
+
+<!-- FAQ Item 3 -->
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+  <h3 itemprop="name">Apakah Cafe Beringin Premium menyediakan menu vegetarian atau vegan?</h3>
+  <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+    <p itemprop="text">Ya, kami memiliki berbagai pilihan menu vegetarian dan vegan yang dirancang khusus untuk memenuhi kebutuhan pelanggan.</p>
+  </div>
+</div>
+
+<!-- FAQ Item 4 -->
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+  <h3 itemprop="name">Apakah tersedia layanan reservasi di Cafe Beringin Premium?</h3>
+  <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+    <p itemprop="text">Ya, kami menyediakan layanan reservasi melalui telepon, website resmi, atau platform reservasi online.</p>
+  </div>
+</div>
+
+<!-- FAQ Item 5 -->
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+  <h3 itemprop="name">Apakah Cafe Beringin Premium menyediakan layanan take away atau delivery?</h3>
+  <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+    <p itemprop="text">Ya, kami menyediakan layanan take away dan bekerja sama dengan platform pengantaran makanan untuk layanan delivery.</p>
+  </div>
+</div>
+
+<!-- FAQ Item 6 -->
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+  <h3 itemprop="name">Apakah ada area khusus untuk acara atau private dining?</h3>
+  <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+    <p itemprop="text">Ya, kami memiliki ruang VIP dan private dining yang dapat disesuaikan untuk acara khusus seperti ulang tahun, pertemuan bisnis, atau perayaan lainnya.</p>
+  </div>
+</div>
+
+<!-- FAQ Item 7 -->
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+  <h3 itemprop="name">Apakah Cafe Beringin Premium menyediakan fasilitas Wi-Fi gratis?</h3>
+  <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+    <p itemprop="text">Ya, kami menyediakan akses Wi-Fi gratis bagi semua pelanggan.</p>
+  </div>
+</div>
+
+<!-- FAQ Item 8 -->
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+  <h3 itemprop="name">Apakah tersedia pilihan kopi spesial di Cafe Beringin Premium?</h3>
+  <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+    <p itemprop="text">Ya, kami menawarkan berbagai kopi spesial seperti Single Origin, Cold Brew, dan Signature Coffee Blend.</p>
+  </div>
+</div>
+
+<!-- FAQ Item 9 -->
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+  <h3 itemprop="name">Apakah Cafe Beringin Premium ramah anak?</h3>
+  <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+    <p itemprop="text">Ya, kami memiliki menu khusus anak dan area ramah keluarga untuk kenyamanan semua pelanggan.</p>
+  </div>
+</div>
+
+<!-- FAQ Item 10 -->
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+  <h3 itemprop="name">Apakah Cafe Beringin Premium memiliki jam operasional tertentu?</h3>
+  <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+    <p itemprop="text">Kami buka setiap hari dari pukul 14.00 hingga 22.00.</p>
+  </div>
+</div>
+
+
+      <!-- FAQ Item 11 -->
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+  <h3 itemprop="name">Apakah Cafe Beringin Premium menyediakan program loyalitas pelanggan?</h3>
+  <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+    <p itemprop="text">Ya, kami memiliki program loyalitas yang memberikan berbagai keuntungan eksklusif bagi pelanggan setia.</p>
+  </div>
+</div>
+
+<!-- FAQ Item 12 -->
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+  <h3 itemprop="name">Apakah ada menu musiman di Cafe Beringin Premium?</h3>
+  <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+    <p itemprop="text">Ya, kami menawarkan menu musiman yang berubah sesuai dengan bahan terbaik di setiap musim.</p>
+  </div>
+</div>
+
+<!-- FAQ Item 13 -->
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+  <h3 itemprop="name">Bagaimana cara melakukan reservasi di Cafe Beringin Premium?</h3>
+  <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+    <p itemprop="text">Anda dapat melakukan reservasi melalui website resmi kami, telepon, atau aplikasi pemesanan online.</p>
+  </div>
+</div>
+
+<!-- FAQ Item 14 -->
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+  <h3 itemprop="name">Apakah tersedia opsi pembayaran non-tunai di Cafe Beringin Premium?</h3>
+  <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+    <p itemprop="text">Ya, kami menerima berbagai metode pembayaran non-tunai seperti kartu kredit, debit, dan e-wallet.</p>
+  </div>
+</div>
+
+<!-- FAQ Item 15 -->
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+  <h3 itemprop="name">Apakah Cafe Beringin Premium menyediakan pilihan menu bebas gluten?</h3>
+  <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+    <p itemprop="text">Ya, kami memiliki beberapa pilihan menu bebas gluten bagi pelanggan yang memiliki kebutuhan khusus.</p>
+  </div>
+</div>
+
+<!-- FAQ Item 16 -->
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+  <h3 itemprop="name">Apakah ada parkir yang tersedia di Cafe Beringin Premium?</h3>
+  <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+    <p itemprop="text">Ya, kami menyediakan area parkir luas dan aman bagi pelanggan.</p>
+  </div>
+</div>
+
+<!-- FAQ Item 17 -->
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+  <h3 itemprop="name">Apakah Cafe Beringin Premium menerima pemesanan untuk acara katering?</h3>
+  <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+    <p itemprop="text">Ya, kami menyediakan layanan katering untuk berbagai acara dengan menu eksklusif.</p>
+  </div>
+</div>
+
+<!-- FAQ Item 18 -->
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+  <h3 itemprop="name">Apakah tersedia menu brunch di Cafe Beringin Premium?</h3>
+  <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+    <p itemprop="text">Ya, kami menyediakan menu brunch spesial setiap akhir pekan dari pukul 09.00 hingga 12.00.</p>
+  </div>
+</div>
+
+<!-- FAQ Item 19 -->
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+  <h3 itemprop="name">Apakah Cafe Beringin Premium ramah bagi hewan peliharaan?</h3>
+  <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+    <p itemprop="text">Kami menyediakan area outdoor yang ramah bagi hewan peliharaan.</p>
+  </div>
+</div>
+
+<!-- FAQ Item 20 -->
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+  <h3 itemprop="name">Apakah tersedia menu minuman non-kopi di Cafe Beringin Premium?</h3>
+  <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+    <p itemprop="text">Ya, kami menawarkan berbagai pilihan teh, mocktail, jus segar, dan minuman lainnya.</p>
+  </div>
+</div>
+
+      <!-- FAQ Item 21 -->
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+  <h3 itemprop="name">Apakah Cafe Beringin Premium memiliki promo atau diskon tertentu?</h3>
+  <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+    <p itemprop="text">Ya, kami rutin menawarkan promo musiman dan diskon khusus untuk anggota loyalitas.</p>
+  </div>
+</div>
+
+<!-- FAQ Item 22 -->
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+  <h3 itemprop="name">Apakah tersedia pilihan makanan ringan di Cafe Beringin Premium?</h3>
+  <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+    <p itemprop="text">Ya, kami memiliki berbagai pilihan makanan ringan seperti pastry, sandwich, dan finger food.</p>
+  </div>
+</div>
+
+<!-- FAQ Item 23 -->
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+  <h3 itemprop="name">Apakah tersedia fasilitas untuk pelanggan dengan disabilitas?</h3>
+  <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+    <p itemprop="text">Ya, kami memiliki akses ramah disabilitas dan fasilitas khusus lainnya.</p>
+  </div>
+</div>
+
+<!-- FAQ Item 24 -->
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+  <h3 itemprop="name">Apakah Cafe Beringin Premium menawarkan menu paket?</h3>
+  <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+    <p itemprop="text">Ya, kami menyediakan berbagai pilihan menu paket untuk individu maupun grup.</p>
+  </div>
+</div>
+
+<!-- FAQ Item 25 -->
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+  <h3 itemprop="name">Bagaimana kualitas bahan yang digunakan di Cafe Beringin Premium?</h3>
+  <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+    <p itemprop="text">Kami menggunakan bahan berkualitas tinggi dan segar untuk memastikan cita rasa terbaik.</p>
+  </div>
+</div>
+
+<!-- FAQ Item 26 -->
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+  <h3 itemprop="name">Apakah Cafe Beringin Premium menerima pesanan khusus atau permintaan diet khusus?</h3>
+  <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+    <p itemprop="text">Ya, kami menerima permintaan khusus sesuai kebutuhan diet pelanggan.</p>
+  </div>
+</div>
+
+<!-- FAQ Item 27 -->
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+  <h3 itemprop="name">Apakah tersedia layanan barista di Cafe Beringin Premium?</h3>
+  <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+    <p itemprop="text">Ya, barista kami terlatih secara profesional untuk menyajikan kopi terbaik.</p>
+  </div>
+</div>
+
+<!-- FAQ Item 28 -->
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+  <h3 itemprop="name">Apakah Cafe Beringin Premium memiliki menu penutup khusus?</h3>
+  <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+    <p itemprop="text">Ya, kami memiliki berbagai pilihan dessert eksklusif seperti lava cake dan tiramisu artisan.</p>
+  </div>
+</div>
+
+<!-- FAQ Item 29 -->
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+  <h3 itemprop="name">Apakah tersedia fasilitas charging station di Cafe Beringin Premium?</h3>
+  <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+    <p itemprop="text">Ya, kami menyediakan charging station di beberapa area untuk kenyamanan pelanggan.</p>
+  </div>
+</div>
+
+<!-- FAQ Item 30 -->
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+  <h3 itemprop="name">Apakah Cafe Beringin Premium memiliki kebijakan ramah lingkungan?</h3>
+  <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+    <p itemprop="text">Ya, kami berkomitmen terhadap praktik ramah lingkungan melalui penggunaan bahan ramah lingkungan dan pengurangan limbah plastik.</p>
+  </div>
+</div>
+
+
+      <!-- FAQ Item 31 -->
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+  <h3 itemprop="name">Apakah tersedia pilihan menu sarapan di Cafe Beringin Premium?</h3>
+  <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+    <p itemprop="text">Ya, kami menawarkan menu sarapan mulai pukul 08.00 hingga 10.30.</p>
+  </div>
+</div>
+
+<!-- FAQ Item 32 -->
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+  <h3 itemprop="name">Apakah Cafe Beringin Premium menerima pesanan kue custom?</h3>
+  <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+    <p itemprop="text">Ya, kami menerima pesanan kue custom untuk berbagai acara spesial.</p>
+  </div>
+</div>
+
+<!-- FAQ Item 33 -->
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+  <h3 itemprop="name">Apakah Cafe Beringin Premium menyediakan merchandise?</h3>
+  <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+    <p itemprop="text">Ya, kami menyediakan merchandise eksklusif seperti tumbler, kopi bubuk, dan lainnya.</p>
+  </div>
+</div>
+
+<!-- FAQ Item 34 -->
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+  <h3 itemprop="name">Apakah tersedia program edukasi kopi di Cafe Beringin Premium?</h3>
+  <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+    <p itemprop="text">Ya, kami menyelenggarakan workshop dan pelatihan tentang kopi secara berkala.</p>
+  </div>
+</div>
+
+<!-- FAQ Item 35 -->
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+  <h3 itemprop="name">Apakah Cafe Beringin Premium menerima reservasi untuk rombongan besar?</h3>
+  <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+    <p itemprop="text">Ya, kami menerima reservasi untuk rombongan besar dengan pemberitahuan sebelumnya.</p>
+  </div>
+</div>
+
+<!-- FAQ Item 36 -->
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+  <h3 itemprop="name">Apakah tersedia layanan khusus untuk perayaan ulang tahun?</h3>
+  <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+    <p itemprop="text">Ya, kami menyediakan layanan khusus termasuk dekorasi dan kue ulang tahun.</p>
+  </div>
+</div>
+
+<!-- FAQ Item 37 -->
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+  <h3 itemprop="name">Apakah Cafe Beringin Premium memiliki menu spesial anak-anak?</h3>
+  <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+    <p itemprop="text">Ya, kami menawarkan menu khusus anak yang sehat dan lezat.</p>
+  </div>
+</div>
+
+<!-- FAQ Item 38 -->
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+  <h3 itemprop="name">Apakah ada dress code tertentu di Cafe Beringin Premium?</h3>
+  <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+    <p itemprop="text">Tidak, kami menyambut pelanggan dengan gaya berpakaian santai namun sopan.</p>
+  </div>
+</div>
+
+<!-- FAQ Item 39 -->
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+  <h3 itemprop="name">Apakah Cafe Beringin Premium memiliki kebijakan pembatalan reservasi?</h3>
+  <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+    <p itemprop="text">Ya, pembatalan reservasi dapat dilakukan minimal 24 jam sebelumnya.</p>
+  </div>
+</div>
+
+<!-- FAQ Item 40 -->
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+  <h3 itemprop="name">Bagaimana cara memberikan masukan atau ulasan tentang Cafe Beringin Premium?</h3>
+  <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+    <p itemprop="text">Anda dapat memberikan masukan melalui website kami, media sosial, atau langsung kepada staf kami di lokasi.</p>
+  </div>
+</div>
+
+
+    </div>
+  </div>
+</section>
+
+
+<!-- Footer -->
+    <footer>
+        <ul>
+            <li><a href="#" id="aboutFooterBtn">About Us</a></li>
+            <li><a href="#" id="privacyFooterBtn">Privacy Policy</a></li>
+            <li><a href="#" id="termsFooterBtn">Terms & Conditions</a></li>
+        </ul>
+        <p>&copy; 2025 Beringin Premium</p>
+</footer>
+
+<!-- Modal for About Us -->
+<div id="modal-about" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+<h2>About Us</h2>
+<p>
+
+<h2>**About Us - Beringin Premium**</h2>
+<br />
+<p><strong>About Us - Beringin Premium</strong></p>
+<br />
+<p><strong>Cafe Beringin Premium</strong> adalah destinasi kuliner yang menawarkan pengalaman bersantap eksklusif dengan suasana yang elegan dan nyaman. Berdiri sejak tahun <strong>2020</strong>, kami berkomitmen menyajikan berbagai pilihan menu berkualitas tinggi dengan cita rasa autentik yang memanjakan lidah.</p>
+<br>
+<p>Dengan bahan-bahan pilihan terbaik dan proses pembuatan yang teliti, kami menghadirkan <strong>kopi spesial</strong> dan hidangan lezat yang dikurasi secara profesional. Setiap cangkir kopi di Cafe Beringin Premium dibuat dengan penuh dedikasi untuk memberikan kehangatan di setiap tegukan.</p>
+<br>
+<p>Selain itu, kami menyediakan berbagai menu makanan mulai dari <strong>makanan ringan</strong> hingga <strong>makanan utama</strong> yang cocok untuk menemani waktu bersantai atau pertemuan bisnis Anda. Suasana nyaman dan pelayanan ramah menjadi prioritas utama kami dalam memberikan pengalaman terbaik bagi setiap pengunjung.</p>
+<br>
+<p><strong>Misi kami</strong> adalah menciptakan ruang berkumpul yang inspiratif, di mana setiap orang dapat menikmati hidangan berkualitas dalam suasana yang menyenangkan dan penuh kehangatan.</p>
+</p>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<!-- Modal for Our Services -->
+<div id="modal-services" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+<h2>Our Services</h2>
+<p>
+
+<h2><strong>Our Services - Beringin Premium Café</strong></h2>
+<br />
+<p>Di <strong>Beringin Premium Café</strong>, kami menghadirkan pengalaman kuliner dan kopi premium dengan cita rasa istimewa di setiap sajian. Dengan suasana elegan dan pelayanan ramah, kami siap memberikan pengalaman tak terlupakan bagi setiap pengunjung.</p>
+<br />
+
+<h3>☕ Premium Coffee Selections</h3>
+<p>Nikmati beragam pilihan kopi premium yang diracik dari biji kopi terbaik. Mulai dari espresso klasik hingga kreasi minuman eksklusif, setiap tegukan memberikan cita rasa yang mendalam dan otentik.</p>
+<br />
+
+<h3>🍽️ Gourmet Cuisine & Exclusive Menu</h3>
+<p>Kami menyajikan hidangan berkualitas tinggi yang dirancang secara khusus oleh chef profesional. Dari menu sarapan hingga makan malam, setiap sajian dibuat dengan bahan terbaik untuk memanjakan selera Anda.</p>
+<br />
+
+<h3>🎊 Exclusive Events & Private Bookings</h3>
+<p>Beringin Premium Café menyediakan layanan penyelenggaraan acara eksklusif seperti pertemuan bisnis, pesta pribadi, dan perayaan istimewa. Kami menawarkan ruang elegan dan fasilitas lengkap untuk memenuhi kebutuhan acara Anda.</p>
+<br />
+
+<h3>🛵 Delivery & Takeaway Services</h3>
+<p>Bagi Anda yang ingin menikmati kelezatan Beringin Premium Café di rumah atau di kantor, kami menyediakan layanan antar dan takeaway dengan kualitas rasa yang tetap terjaga.</p>
+<br />
+
+<h3>📚 Cozy Workspace & Free Wi-Fi</h3>
+<p>Temukan kenyamanan bekerja atau bersantai di lingkungan kami yang tenang. Dengan akses Wi-Fi gratis dan area yang nyaman, Beringin Premium Café adalah tempat sempurna untuk produktivitas atau melepas penat.</p>
+<br />
+
+<h3>📖 Cozy Workspace & Study Hub</h3>
+<p>Ruang kami dirancang nyaman untuk Anda yang ingin bekerja atau belajar. Dilengkapi dengan akses Wi-Fi cepat dan suasana tenang untuk meningkatkan produktivitas.</p>
+<br />
+
+<p>Kami melayani Anda setiap hari dari <strong>14.00 hingga 22.00</strong>. Untuk informasi lebih lanjut atau reservasi, hubungi kami di 087894515616 atau ikuti kami di <strong><a href="https://instagram.com/beringinpremium">Instagram: @beringinpremium</a></strong>.</p>
+<br />
+
+</p>
+    </div>
+</div>
+
+
+<!-- Modal for Contact -->
+    <div id="modal-contact" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+<h2>Contact Us</h2>
+<p><strong>Beringin Premium</strong></p>
+
+<p><strong>Alamat:</strong><br>Jl. Tiban Koperasi No.52 Block D, Tiban Baru, Kec. Sekupang, Kota Batam, Kepulauan Riau 29425</p>
+
+<p><strong>Jam Operasional:</strong></p>
+<p><strong>Rabu:</strong> 14.00–22.00<br>
+<strong>Kamis:</strong> 14.00–22.00<br>
+<strong>Jumat:</strong> 15.00–23.00<br>
+<strong>Sabtu:</strong> 15.00–23.00<br>
+<strong>Minggu:</strong> 15.00–23.00<br>
+<strong>Senin:</strong> 14.00–22.00<br>
+<strong>Selasa:</strong> 14.00–22.00</p>
+
+<p><strong>Telepon:</strong><br>087894515616</p>
+        </div>
+    </div>
+
+
+
+
+<!-- Modal for Footer About Us -->
+    <div id="modal-footer-about" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+<h2>About Us</h2>
+<p><strong>Tentang Kami - Beringin Premium</strong></p>
+
+<p>Beringin Premium hadir sebagai destinasi utama bagi pecinta kuliner dan kopi berkualitas tinggi. <br>Kami menggabungkan cita rasa autentik dengan suasana elegan, menciptakan pengalaman bersantap yang tak terlupakan di setiap kunjungan.</p>
+
+<p><strong>Visi Kami</strong><br>
+Menjadi pilihan terdepan bagi pelanggan yang menginginkan perpaduan sempurna antara kualitas, kenyamanan, dan inovasi dalam dunia kuliner dan kopi.</p>
+
+<p><strong>Misi Kami</strong><br>
+1. Menyajikan hidangan dan minuman berkualitas tinggi dengan bahan pilihan terbaik. <br>
+2. Menciptakan lingkungan yang hangat dan eksklusif bagi setiap pelanggan. <br>
+3. Terus berinovasi dalam menghadirkan menu unik yang memanjakan lidah dan memberikan pengalaman istimewa.</p>
+
+<p><strong>Kenapa Memilih Beringin Premium?</strong><br>
+Kami berkomitmen menghadirkan pengalaman kuliner yang istimewa melalui pelayanan profesional, suasana premium, dan cita rasa yang autentik. <br>Beringin Premium siap menjadi tempat terbaik untuk menikmati momen berharga Anda.</p>
+    </div>
+</div>
+
+<!-- Modal for Privacy Policy -->
+<div id="modal-footer-privacy" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+<h2>Privacy Policy</h2>
+<p><strong>Kebijakan Privasi - Cafe Beringin Premium</strong></p>
+
+<p><strong>1. Pengumpulan Informasi Pribadi</strong><br>
+Kami mengumpulkan informasi pribadi dari pelanggan, termasuk namun tidak terbatas pada nama, nomor telepon, alamat email, dan preferensi pesanan. Informasi ini dikumpulkan saat Anda melakukan pemesanan, mendaftar keanggotaan, atau berinteraksi dengan layanan kami.</p>
+
+<p><strong>2. Penggunaan Informasi</strong><br>
+Informasi yang kami kumpulkan digunakan untuk meningkatkan layanan kami, memproses pesanan, mengirimkan pembaruan terkait promo atau acara, serta memastikan pengalaman pelanggan yang lebih baik di Cafe Beringin Premium.</p>
+
+<p><strong>3. Perlindungan Data</strong><br>
+Kami berkomitmen melindungi informasi pribadi Anda. Data yang kami kumpulkan disimpan dengan sistem keamanan yang ketat untuk mencegah akses tanpa izin, penyalahgunaan, atau pengungkapan informasi.</p>
+
+<p><strong>4. Berbagi Informasi dengan Pihak Ketiga</strong><br>
+Kami tidak membagikan informasi pribadi pelanggan kepada pihak ketiga tanpa persetujuan, kecuali diwajibkan oleh hukum atau untuk keperluan penyediaan layanan yang Anda minta.</p>
+
+<p><strong>5. Hak Pelanggan</strong><br>
+Anda berhak mengakses, memperbarui, atau menghapus informasi pribadi Anda yang tersimpan di sistem kami. Silakan hubungi kami untuk permintaan tersebut atau pertanyaan terkait kebijakan privasi ini.</p>
+
+<p><strong>6. Perubahan Kebijakan Privasi</strong><br>
+Cafe Beringin Premium berhak memperbarui kebijakan privasi ini dari waktu ke waktu. Perubahan akan diinformasikan melalui situs web atau pemberitahuan langsung kepada pelanggan.</p>
+
+<p><strong>7. Kontak Kami</strong><br>
+Jika Anda memiliki pertanyaan mengenai kebijakan privasi ini, silakan hubungi kami melalui:<br>
+Email: info@beringinpremium.com<br>
+Telepon: 087894515616</p>
+    </div>
+</div>
+
+<!-- Modal for Terms and Conditions -->
+<div id="modal-footer-terms" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+<h2>Terms and Conditions</h2>
+<p><strong>Syarat dan Ketentuan - Cafe Beringin Premium</strong></p>
+
+<p><strong>1. Umum</strong><br>
+Dengan mengunjungi dan menggunakan layanan di Cafe Beringin Premium, Anda dianggap telah membaca, memahami, dan menyetujui seluruh syarat dan ketentuan yang berlaku.</p>
+
+<p><strong>2. Jam Operasional</strong><br>
+Cafe Beringin Premium beroperasi setiap hari mulai pukul 14:00 hingga 22:00 WIB. Jam operasional dapat berubah sewaktu-waktu tanpa pemberitahuan sebelumnya.</p>
+
+<p><strong>3. Reservasi dan Pembatalan</strong><br>
+Reservasi dapat dilakukan melalui telepon, situs web resmi, atau langsung di lokasi. Pembatalan reservasi harus dilakukan minimal 24 jam sebelumnya. Keterlambatan lebih dari 15 menit tanpa pemberitahuan akan dianggap sebagai pembatalan otomatis.</p>
+
+<p><strong>4. Kebijakan Pembayaran</strong><br>
+Kami menerima pembayaran melalui tunai, kartu debit/kredit, dan dompet digital. Semua pembayaran bersifat final dan tidak dapat dikembalikan kecuali ada kesalahan dari pihak Cafe Beringin Premium.</p>
+
+<p><strong>5. Kebijakan Makanan dan Minuman</strong><br>
+Dilarang membawa makanan dan minuman dari luar. Semua menu disiapkan dengan bahan berkualitas tinggi, namun kami tidak bertanggung jawab atas reaksi alergi yang mungkin terjadi. Harap informasikan kepada staf kami jika Anda memiliki alergi tertentu.</p>
+
+<p><strong>6. Tanggung Jawab Pelanggan</strong><br>
+Pelanggan bertanggung jawab atas barang pribadi masing-masing. Cafe Beringin Premium tidak bertanggung jawab atas kehilangan atau kerusakan barang pribadi di area cafe.</p>
+
+<p><strong>7. Larangan dan Ketertiban</strong><br>
+Dilarang merokok di area dalam ruangan. Harap menjaga ketertiban dan menghormati pengunjung lain. Cafe Beringin Premium berhak menolak atau meminta pelanggan meninggalkan area jika melanggar aturan atau menyebabkan gangguan.</p>
+
+<p><strong>8. Perubahan Syarat dan Ketentuan</strong><br>
+Cafe Beringin Premium berhak mengubah syarat dan ketentuan ini tanpa pemberitahuan sebelumnya. Pelanggan disarankan untuk memeriksa pembaruan secara berkala di situs resmi kami.</p>
+
+<p><strong>9. Kontak</strong><br>
+Jika ada pertanyaan atau klarifikasi, Anda dapat menghubungi kami melalui:<br>
+Telepon: 087894515616<br>
+Email: info@beringinpremium.com</p>
+
+<p><strong>Terima kasih telah memilih Cafe Beringin Premium. Kami berharap Anda menikmati pengalaman terbaik bersama kami.</strong></p>
+    </div>
+</div>
+
+<!-- Modal Caramel Macchiato Signature -->
+<div id="modal-apply" class="modal" itemscope itemtype="https://schema.org/Recipe">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2 itemprop="name">Caramel Macchiato Signature</h2>
+        <br>
+        <h3>Manfaat Caramel Macchiato Signature</h3>
+        <ul>
+            <li><span itemprop="description">Kenikmatan Manis dan Kuat: Perpaduan espresso yang kuat dengan rasa karamel yang manis menciptakan harmoni rasa.</span></li>
+            <li><span itemprop="description">Peningkat Mood: Aroma karamel dan kopi yang khas dapat membantu meningkatkan suasana hati.</span></li>
+            <li><span itemprop="description">Pilihan Premium: Menawarkan pengalaman minum kopi ala kafe di rumah Anda.</span></li>
+        </ul>
+        <br>
+        <h3>Bahan-bahan yang Umum Digunakan</h3>
+        <ul itemprop="ingredients">
+            <li>1 shot espresso dari biji kopi pilihan</li>
+            <li>150 ml susu segar yang dikukus</li>
+            <li>20 ml sirup karamel berkualitas</li>
+            <li>Es batu (jika disajikan dingin)</li>
+            <li>Whipped cream (opsional)</li>
+        </ul>
+        <br />
+        <h3>Cara Membuat Caramel Macchiato Signature</h3>
+        <ol itemprop="recipeInstructions">
+            <li>Siapkan gelas saji, tuangkan sirup karamel di dasar gelas.</li>
+            <li>Tambahkan susu segar yang sudah dikukus secara perlahan.</li>
+            <li>Ekstrak 1 shot espresso dan tuangkan perlahan di atas susu.</li>
+            <li>Jika ingin disajikan dingin, tambahkan es batu sebelum menuang espresso.</li>
+            <li>Tambahkan whipped cream di atasnya dan hias dengan saus karamel (opsional).</li>
+            <li>Sajikan segera dan nikmati Caramel Macchiato Signature Anda.</li>
+        </ol>
+        <br />
+        <h3>Tips Tambahan</h3>
+        <ol>
+            <li>Gunakan sirup karamel berkualitas tinggi untuk rasa yang lebih autentik.</li>
+            <li>Sesuaikan kekuatan espresso sesuai selera Anda.</li>
+            <li>Tambahkan sedikit garam laut di atas whipped cream untuk menonjolkan rasa karamel.</li>
+        </ol>
+        <br>
+        <p><strong>Caramel Macchiato Signature</strong> adalah pilihan sempurna bagi pecinta kopi yang menginginkan kombinasi manis dan kekuatan rasa espresso. Selamat mencoba!</p>
+        <br>
+        <img src="https://png.pngtree.com/thumb_back/fw800/background/20240401/pngtree-caramel-macchiato-coffee-in-glass-image_15644513.jpg" alt="Caramel Macchiato Signature" width="500" itemprop="image">
+        <br />
+    </div>
+</div>
+
+
+
+<!-- Modal Americano -->
+<div id="modal-apply1" class="modal" itemscope itemtype="https://schema.org/Recipe">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2 itemprop="name">Americano</h2>
+        <br>
+        <h3>Manfaat Americano</h3>
+        <ul>
+            <li><span itemprop="description">Rendah Kalori: Tanpa tambahan gula atau susu, cocok untuk gaya hidup sehat.</span></li>
+            <li><span itemprop="description">Meningkatkan Konsentrasi: Kafein murni membantu meningkatkan fokus dan kewaspadaan.</span></li>
+            <li><span itemprop="description">Menyegarkan: Cocok sebagai minuman pembuka di pagi hari.</span></li>
+        </ul>
+        <br>
+        <h3>Bahan-bahan yang Umum Digunakan</h3>
+        <ul itemprop="ingredients">
+            <li>1 shot espresso dari biji kopi berkualitas</li>
+            <li>150 ml air panas</li>
+        </ul>
+        <br />
+        <h3>Cara Membuat Americano</h3>
+        <ol itemprop="recipeInstructions">
+            <li>Siapkan cangkir saji.</li>
+            <li>Ekstrak 1 shot espresso ke dalam cangkir.</li>
+            <li>Tuangkan air panas perlahan ke dalam espresso.</li>
+            <li>Sajikan segera dan nikmati Americano yang kaya rasa.</li>
+        </ol>
+        <br />
+        <h3>Tips Tambahan</h3>
+        <ol>
+            <li>Gunakan air berkualitas untuk hasil rasa terbaik.</li>
+            <li>Tambahkan es batu untuk versi Iced Americano.</li>
+            <li>Sesuaikan rasio espresso dan air sesuai selera.</li>
+        </ol>
+        <br>
+        <p><strong>Americano</strong> adalah pilihan sempurna bagi penikmat kopi yang menginginkan rasa murni dan sederhana. Selamat mencoba!</p>
+        <br>
+        <img src="https://taysbakers.com/wp-content/uploads/2015/07/americano.jpg" alt="Americano" width="500" itemprop="image">
+        <br />
+    </div>
+</div>
+
+<!-- Modal Caffe Latte -->
+<div id="modal-apply2" class="modal" itemscope itemtype="https://schema.org/Recipe">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2 itemprop="name">Caffe Latte</h2>
+        <br>
+        <h3>Manfaat Caffe Latte</h3>
+        <ul>
+            <li><span itemprop="description">Memberi Ketenangan: Kombinasi susu hangat dan espresso menciptakan rasa nyaman.</span></li>
+            <li><span itemprop="description">Sumber Energi: Kafein membantu meningkatkan energi dan produktivitas.</span></li>
+            <li><span itemprop="description">Rasa Lembut: Cocok bagi mereka yang menginginkan rasa kopi yang tidak terlalu kuat.</span></li>
+        </ul>
+        <br>
+        <h3>Bahan-bahan yang Umum Digunakan</h3>
+        <ul itemprop="ingredients">
+            <li>1 shot espresso</li>
+            <li>200 ml susu segar</li>
+            <li>Foam susu untuk hiasan</li>
+        </ul>
+        <br />
+        <h3>Cara Membuat Caffe Latte</h3>
+        <ol itemprop="recipeInstructions">
+            <li>Siapkan gelas saji besar.</li>
+            <li>Panaskan dan froth susu hingga berbusa.</li>
+            <li>Ekstrak 1 shot espresso dan tuangkan ke dalam gelas.</li>
+            <li>Tambahkan susu hangat dan lapisan foam di atasnya.</li>
+            <li>Sajikan segera dan nikmati kelezatan Caffe Latte.</li>
+        </ol>
+        <br />
+        <h3>Tips Tambahan</h3>
+        <ol>
+            <li>Gunakan susu dengan kadar lemak tinggi untuk hasil lebih creamy.</li>
+            <li>Tambahkan sirup vanila atau karamel untuk variasi rasa.</li>
+            <li>Latihan membuat latte art untuk tampilan menarik.</li>
+        </ol>
+        <br>
+        <p><strong>Caffe Latte</strong> adalah minuman yang pas untuk memulai hari dengan suasana santai. Selamat mencoba!</p>
+        <br>
+        <img src="https://luden.id/wp-content/uploads/2024/03/cappuccino-dan-cafe-latte.jpg" alt="Caffe Latte" width="500" itemprop="image">
+        <br />
+    </div>
+</div>
+
+<!-- Modal Manual Brew -->
+<div id="modal-apply3" class="modal" itemscope itemtype="https://schema.org/Recipe">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2 itemprop="name">Manual Brew</h2>
+        <br>
+        <h3>Manfaat Manual Brew</h3>
+        <ul>
+            <li><span itemprop="description">Rasa Autentik: Menonjolkan karakter unik dari biji kopi pilihan.</span></li>
+            <li><span itemprop="description">Kustomisasi: Bisa mengatur suhu, waktu seduh, dan rasio kopi sesuai selera.</span></li>
+            <li><span itemprop="description">Proses Santai: Ritual menyeduh secara manual memberikan pengalaman menenangkan.</span></li>
+        </ul>
+        <br>
+        <h3>Bahan-bahan yang Umum Digunakan</h3>
+        <ul itemprop="ingredients">
+            <li>15-20 gram biji kopi segar</li>
+            <li>250 ml air panas (92-96°C)</li>
+            <li>Alat seduh manual (V60, French Press, atau Aeropress)</li>
+        </ul>
+        <br />
+        <h3>Cara Membuat Manual Brew</h3>
+        <ol itemprop="recipeInstructions">
+            <li>Giling biji kopi sesuai metode seduh yang digunakan.</li>
+            <li>Basahi filter dan siapkan alat seduh di atas cangkir.</li>
+            <li>Tuangkan kopi bubuk dan tuang air panas perlahan secara melingkar.</li>
+            <li>Biarkan kopi menetes hingga selesai (sekitar 3-4 menit).</li>
+            <li>Sajikan segera dan nikmati rasa autentik Manual Brew.</li>
+        </ol>
+        <br />
+        <h3>Tips Tambahan</h3>
+        <ol>
+            <li>Gunakan biji kopi single origin untuk rasa yang lebih kompleks.</li>
+            <li>Eksperimen dengan rasio kopi dan air untuk menemukan rasa favorit Anda.</li>
+            <li>Pastikan suhu air konsisten di 92-96°C untuk hasil terbaik.</li>
+        </ol>
+        <br>
+        <p><strong>Manual Brew</strong> menawarkan pengalaman menyeduh kopi yang personal dan memuaskan. Selamat mencoba!</p>
+        <br>
+        <img src="https://asset.kompas.com/crops/n-hmPUQlJsW8sK8ppfyHAJqb49U=/0x0:5397x3598/1200x800/data/photo/2022/01/03/61d313971017f.jpg" alt="Manual Brew" width="500" itemprop="image">
+        <br />
+    </div>
+</div>
+
+
+<!-- Modal Mie Goreng -->
+<div id="modal-apply4" class="modal" itemscope itemtype="https://schema.org/Recipe">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2 itemprop="name">Mie Goreng</h2>
+        <br>
+        <h3>Manfaat Mie Goreng</h3>
+        <ul>
+            <li><span itemprop="description">Sumber Energi: Karbohidrat dari mie memberikan energi yang cepat dan mengenyangkan.</span></li>
+            <li><span itemprop="description">Mudah Disesuaikan: Bisa dikombinasikan dengan berbagai sayuran, daging, atau telur sesuai selera.</span></li>
+            <li><span itemprop="description">Praktis dan Lezat: Cepat dimasak dan menawarkan cita rasa gurih yang nikmat.</span></li>
+        </ul>
+        <br>
+        <h3>Bahan-bahan yang Umum Digunakan</h3>
+        <ul itemprop="ingredients">
+            <li>150 gram mie telur atau mie instan</li>
+            <li>2 sdm kecap manis</li>
+            <li>1 sdm saus tiram (opsional)</li>
+            <li>2 siung bawang putih, cincang halus</li>
+            <li>1 butir telur (opsional)</li>
+            <li>Sayuran seperti sawi atau kol sesuai selera</li>
+            <li>2 sdm minyak goreng</li>
+            <li>Garam dan merica secukupnya</li>
+        </ul>
+        <br />
+        <h3>Cara Membuat Mie Goreng</h3>
+        <ol itemprop="recipeInstructions">
+            <li>Rebus mie hingga matang, tiriskan, dan sisihkan.</li>
+            <li>Panaskan minyak di wajan, tumis bawang putih hingga harum.</li>
+            <li>Masukkan telur, orak-arik hingga matang (jika menggunakan).</li>
+            <li>Tambahkan sayuran, aduk hingga layu.</li>
+            <li>Masukkan mie yang telah direbus, aduk rata.</li>
+            <li>Tuangkan kecap manis, saus tiram, garam, dan merica. Aduk hingga bumbu meresap.</li>
+            <li>Angkat dan sajikan hangat.</li>
+        </ol>
+        <br />
+        <h3>Tips Tambahan</h3>
+        <ol>
+            <li>Gunakan mie yang tidak mudah lembek untuk tekstur yang lebih kenyal.</li>
+            <li>Tambahkan irisan cabai jika ingin rasa pedas yang menggugah selera.</li>
+            <li>Hiasi dengan bawang goreng dan irisan mentimun untuk penyajian yang menarik.</li>
+        </ol>
+        <br>
+        <p><strong>Mie Goreng</strong> adalah hidangan klasik yang mudah disiapkan dan selalu menggugah selera. Cocok untuk segala suasana. Selamat mencoba!</p>
+        <br>
+        <img src="https://cdn0-production-images-kly.akamaized.net/rF9J7T6wYPBakuzlp-ym1JveG6w=/0x342:5989x3718/1200x675/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/3930827/original/066100900_1644554867-shutterstock_1984582070.jpg" alt="Mie Goreng" width="500" itemprop="image">
+        <br />
+    </div>
+</div>
+
+
+
+<!-- Modal Nasi Goreng -->
+<div id="modal-apply5" class="modal" itemscope itemtype="https://schema.org/Recipe">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2 itemprop="name">Nasi Goreng</h2>
+        <br>
+        <h3>Manfaat Nasi Goreng</h3>
+        <ul>
+            <li><span itemprop="description">Sumber Energi: Karbohidrat dari nasi memberikan energi yang mengenyangkan.</span></li>
+            <li><span itemprop="description">Cepat dan Praktis: Mudah disiapkan sebagai hidangan utama yang lezat.</span></li>
+            <li><span itemprop="description">Fleksibel: Bisa disesuaikan dengan berbagai tambahan seperti ayam, telur, atau sayuran.</span></li>
+        </ul>
+        <br>
+        <h3>Bahan-bahan yang Umum Digunakan</h3>
+        <ul itemprop="ingredients">
+            <li>1 piring nasi putih (lebih baik nasi dingin)</li>
+            <li>2 sdm kecap manis</li>
+            <li>1 sdm saus tiram (opsional)</li>
+            <li>2 siung bawang putih, cincang halus</li>
+            <li>1 butir telur</li>
+            <li>1 sdm minyak goreng</li>
+            <li>Garam dan merica secukupnya</li>
+            <li>Tambahan: ayam suwir, udang, atau sosis (opsional)</li>
+        </ul>
+        <br />
+        <h3>Cara Membuat Nasi Goreng</h3>
+        <ol itemprop="recipeInstructions">
+            <li>Panaskan minyak di wajan, tumis bawang putih hingga harum.</li>
+            <li>Pecahkan telur, orak-arik hingga matang.</li>
+            <li>Masukkan nasi putih, aduk rata dengan telur dan bawang.</li>
+            <li>Tambahkan kecap manis, saus tiram, garam, dan merica. Aduk hingga bumbu meresap.</li>
+            <li>Tambahkan bahan tambahan seperti ayam atau udang jika diinginkan.</li>
+            <li>Masak selama 2-3 menit, angkat dan sajikan hangat.</li>
+        </ol>
+        <br />
+        <h3>Tips Tambahan</h3>
+        <ol>
+            <li>Gunakan nasi yang telah didinginkan agar hasil nasi goreng tidak lembek.</li>
+            <li>Sesuaikan tingkat kemanisan dengan menambah atau mengurangi kecap manis.</li>
+            <li>Tambahkan irisan mentimun dan kerupuk untuk pelengkap hidangan.</li>
+        </ol>
+        <br>
+        <p><strong>Nasi Goreng</strong> adalah hidangan favorit yang mudah dibuat dan cocok dinikmati kapan saja. Selamat mencoba!</p>
+        <br>
+        <img src="https://cdn0-production-images-kly.akamaized.net/HusexjAqNowHofU5e1lb0jXNBEk=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/1359428/original/084420000_1475132767-Black-pepper-petai-fried-rice.jpg" alt="Nasi Goreng" width="500" itemprop="image">
+        <br />
+    </div>
+</div>
+
+
+
+<!-- Modal French Fries -->
+<div id="modal-apply6" class="modal" itemscope itemtype="https://schema.org/Recipe">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2 itemprop="name">French Fries</h2>
+        <br>
+        <h3>Manfaat French Fries</h3>
+        <ul>
+            <li><span itemprop="description">Sumber Karbohidrat: Kentang adalah sumber karbohidrat yang memberikan energi bagi tubuh.</span></li>
+            <li><span itemprop="description">Camilan Praktis: Mudah disajikan dan cocok sebagai pendamping hidangan utama.</span></li>
+            <li><span itemprop="description">Serbaguna: Bisa dikombinasikan dengan berbagai saus atau bumbu tambahan.</span></li>
+        </ul>
+        <br>
+        <h3>Bahan-bahan yang Umum Digunakan</h3>
+        <ul itemprop="ingredients">
+            <li>3 buah kentang besar (kupas dan potong memanjang)</li>
+            <li>Air dingin (untuk merendam kentang)</li>
+            <li>Minyak goreng (secukupnya untuk menggoreng)</li>
+            <li>1 sdt garam (atau sesuai selera)</li>
+            <li>Bumbu tambahan: Bubuk paprika, bubuk bawang, atau keju parut (optional)</li>
+        </ul>
+        <br />
+        <h3>Cara Membuat French Fries</h3>
+        <ol itemprop="recipeInstructions">
+            <li>Rendam potongan kentang dalam air dingin selama 30 menit untuk mengurangi kadar pati.</li>
+            <li>Tiriskan kentang dan keringkan menggunakan tisu dapur.</li>
+            <li>Panaskan minyak di wajan hingga suhu sekitar 170°C.</li>
+            <li>Goreng kentang hingga setengah matang (sekitar 4-5 menit), lalu angkat dan tiriskan.</li>
+            <li>Diamkan kentang selama beberapa menit, kemudian goreng kembali hingga berwarna keemasan dan renyah.</li>
+            <li>Angkat, tiriskan, dan taburkan garam atau bumbu tambahan sesuai selera.</li>
+            <li>Sajikan selagi hangat dengan saus favorit Anda.</li>
+        </ol>
+        <br />
+        <h3>Tips Tambahan</h3>
+        <ol>
+            <li>Gunakan kentang jenis russet atau kentang dengan kadar pati tinggi untuk hasil lebih renyah.</li>
+            <li>Goreng dua kali agar French Fries lebih garing di luar dan lembut di dalam.</li>
+            <li>Tambahkan bumbu setelah menggoreng agar rasa lebih merata dan tidak mengurangi kerenyahan.</li>
+        </ol>
+        <br>
+        <p><strong>French Fries</strong> adalah camilan lezat dan renyah yang cocok dinikmati kapan saja. Sajikan dengan saus favorit Anda untuk pengalaman yang lebih nikmat. Selamat mencoba!</p>
+        <br>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/034/904/621/small/savory-french-fries-cuisine-freshly-prepared-to-perfection-generative-ai-photo.jpg" alt="French Fries" width="500" itemprop="image">
+        <br />
+    </div>
+</div>
+
+
+
+
+<script>
+        // Modal functionality for Header
+        function showModal(modalId) {
+            const modal = document.getElementById(modalId);
+            const closeModal = modal.querySelector('.close');
+            modal.style.display = 'block';
+
+            closeModal.addEventListener('click', () => {
+                modal.style.display = 'none';
+            });
+
+            window.onclick = function(event) {
+                if (event.target === modal) {
+                    modal.style.display = 'none';
+                }
+            };
+        }
+
+        // Apply Modals
+       document.getElementById('applyBtn').addEventListener('click', () => showModal('modal-apply'));
+
+
+       // Apply Modals
+       document.getElementById('applyBtn1').addEventListener('click', () => showModal('modal-apply1'));
+       document.getElementById('applyBtn2').addEventListener('click', () => showModal('modal-apply2'));
+       document.getElementById('applyBtn3').addEventListener('click', () => showModal('modal-apply3'));
+       document.getElementById('applyBtn4').addEventListener('click', () => showModal('modal-apply4'));
+       document.getElementById('applyBtn5').addEventListener('click', () => showModal('modal-apply5'));
+       document.getElementById('applyBtn6').addEventListener('click', () => showModal('modal-apply6'));
+
+        // Header Modals
+        document.getElementById('aboutBtn').addEventListener('click', () => showModal('modal-about'));
+        document.getElementById('servicesBtn').addEventListener('click', () => showModal('modal-services'));
+        document.getElementById('contactBtn').addEventListener('click', () => showModal('modal-contact'));
+
+        // Footer Modals
+        document.getElementById('aboutFooterBtn').addEventListener('click', () => showModal('modal-footer-about'));
+        document.getElementById('privacyFooterBtn').addEventListener('click', () => showModal('modal-footer-privacy'));
+        document.getElementById('termsFooterBtn').addEventListener('click', () => showModal('modal-footer-terms'));
+    </script>
+
+
+
+</body>
+</html>
